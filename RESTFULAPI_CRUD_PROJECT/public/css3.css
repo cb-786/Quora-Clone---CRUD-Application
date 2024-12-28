@@ -1,0 +1,68 @@
+.post {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+h2 {
+    text-align: center;
+    color: #b92b27;
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+/* Post Name */
+.name {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #2e69ff;
+}
+
+/* Post Content */
+.content {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Post Date */
+.date {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* Divider Styling */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 15px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #b92b27;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #a02421;
+}
+
+.formy2 {
+    display: flex;                /* Use flexbox for centering */
+    justify-content: center;      /* Center horizontally */
+    align-items: center;          /* Center vertically */
+                 
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quora</title>
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+<body>
+    <h1>Quora</h1>
+    <br>
+     <% let id =0; %>
+    <h2> Today's HOT topics </h2>
+    <% posts.forEach(post => { %>
+         <div class="post">
+           <% post.id = id; %>
+            <h4 class="name">
+                <a href="/posts/<%= id %>" style="text-decoration: none; color: inherit;"> 
+                    @<%= post.name %>  
+                </a>
+                <% id++; %>
+            <h5 class="content"> <%= post.content %> </h5>
+            <h6 class="date"> <%= post.date %> </h6>
+    
+        
+                    <a  id="editb" href="/posts/<%=id-1%>/edit"  style="text-decoration: none;">edit</a>
+                  
+                    <form action="/posts/<%= id-1 %>?_method=DELETE" method="post">
+                        <button id="delb" >delete</button>
+                    </form>
+               
+          
+            
+            
+         </div>
+        <hr>
+    <% }) %>
+
+     <form method="get" class="formy2" action="/posts/new"> 
+        <button > Post ! </button>
+     </form>
+     <hr>
+   
+
+
+</body>
+</html>

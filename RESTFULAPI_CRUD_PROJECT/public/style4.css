@@ -1,0 +1,100 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header Styling */
+h2 {
+    text-align: center;
+    color: #b92b27;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+/* Form Container */
+.formy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+.inputy, .textholder {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.textholder {
+    height: 100px;
+    resize: none;
+}
+
+/* Placeholder Styling */
+.inputy::placeholder, .textholder::placeholder {
+    color: #999;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    background-color: #b92b27;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #a02421;
+}
+
+
+
+.post-info {
+    display: flex;
+    flex-direction: column; /* Change to 'row' for horizontal alignment */
+    align-items: flex-start; /* Align items to the start */
+    margin-bottom: 10px;
+    margin-left: 23.5rem; /* Space between post info and form */
+}
+
+
+.post-name {
+    font-size: 1.5em; /* Larger font size for the name */
+    font-weight: bold; /* Bold text for emphasis */
+    color: #333; /* Dark gray color for better readability */
+    margin-bottom: 10px;
+    order:1; /* Space below the name */
+}
+
+.post-date {
+    font-size: 1em; /* Standard font size for the date */
+    color: #777; /* Lighter gray color for the date */
+    font-style: italic;
+    order: 2; /* Italic style for a subtle effect */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    .formy {
+        padding: 15px;
+    }
+}

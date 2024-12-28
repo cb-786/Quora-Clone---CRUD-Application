@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new post</title>
+    <link rel="stylesheet" href="/style4.css">
+</head>
+<body>
+    <h2> edit post</h2>
+    <div class="post-info">
+        <p class="post-date">date : <%= post.date %></p>
+        <p class="post-name">name : <%= post.name %></p>
+    </div>
+     
+    <form action="/posts/<%=post.id%>?_method=PATCH" method="post" class="formy">
+        <textarea class="textholder" placeholder="enter the content" name="content"></textarea><br>
+        <button>edit</button>
+    </form>
+</body>
+</html>
